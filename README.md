@@ -6,14 +6,14 @@ Each lab starts from a real-world requirement, then documents what I configured,
 
 > All tenant IDs, domains, usernames and other identifiers in this repo are redacted or replaced with placeholders (`contoso.onmicrosoft.com`). The labs ran in a personal test tenant, never a production environment.
 
-## Skills demonstrated
-- **Identity management:** users, groups (including dynamic membership), administrative units, Entra RBAC and least-privilege delegation
-- **Hybrid and external identity:** Entra Connect / Cloud Sync concepts, PHS / PTA / federation, B2B collaboration, cross-tenant access
-- **Authentication:** MFA, passwordless and phishing-resistant methods, Temporary Access Pass, SSPR, Entra Password Protection
-- **Access management:** Conditional Access design and troubleshooting, Identity Protection risk policies
-- **Workload identities:** app registrations, service principals, managed identities, delegated vs application permissions, consent governance, SSO (SAML / OIDC)
-- **Identity governance:** PIM, access reviews, entitlement management, lifecycle workflows
+## Skills demonstrated so far
+- **Identity management:** users, bulk provisioning, joiner/mover/leaver handling, delete and restore, groups (including dynamic membership), group-based licensing
+- **Least-privilege administration:** Entra RBAC, scoped role assignments, administrative units (dynamic and restricted management), custom roles
+- **Tenant configuration:** custom domains, branding, tenant properties, default user permissions
 - **Automation:** Microsoft Graph PowerShell
+
+## Coming next in this plan
+Device identities, hybrid identity and external identities (B2B, cross-tenant access) write-ups, then authentication (MFA, passwordless, SSPR), Conditional Access, Identity Protection, workload identities (app registrations, managed identities, consent), and identity governance (PIM, access reviews, entitlement management, lifecycle workflows).
 
 ## Lab index
 
@@ -25,7 +25,7 @@ Each lab starts from a real-world requirement, then documents what I configured,
 | 04 | [Scoped helpdesk delegation with administrative units](labs/lab04-administrative-units/README.md) | D1 | ✅ |
 | 05 | [User lifecycle and group-based licensing](labs/lab05-user-lifecycle-licensing/README.md) | D1 | ✅ |
 | 06 | [Dynamic groups, naming and expiration policies](labs/lab06-dynamic-groups/README.md) | D1 | ✅ |
-| 07–13 | Devices, hybrid identity (sync, PHS / PTA), external identities (B2B, cross-tenant) | D1 | ⏳ Week 2 |
+| 07–13 | Devices, hybrid identity (sync, PHS / PTA), external identities (B2B, cross-tenant) | D1 | ⏳ Write-ups in progress |
 
 _The table grows weekly as labs are completed._
 
