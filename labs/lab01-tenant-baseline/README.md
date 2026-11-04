@@ -33,7 +33,7 @@ Get-MgUser -Filter "department eq 'Sales'" -ConsistencyLevel eventual -CountVari
 - The Graph connection reported **"Connected via delegated access"**, and the Sales filter returned the expected user.
 
 ## 5. Screenshots
-_Add redacted screenshots to `screenshots/` (blur the tenant ID, domain, UPNs and your name)._
+_No screenshots for this lab. The output shown in PowerShell lists tenant identifiers, so results are described in section 4 instead._
 
 ## 6. What I learned
 - **Delegated permissions:** the app acts on behalf of the signed-in user and can never exceed that user's rights (app permissions ∩ user rights).

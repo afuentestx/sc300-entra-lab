@@ -38,7 +38,20 @@ Paris helpdesk staff must reset passwords **only for Paris users**, new Paris us
 | Turn off restricted management afterwards | — | ❌ Not allowed (set at creation only) |
 
 ## 5. Screenshots
-_Add redacted screenshots: AU dynamic rule, scoped assignment, blocked reset. Blur the AU object ID._
+**The scoped helpdesk user can't reset a user outside the Paris Office unit.** This is the least-privilege design working.
+![Reset password blocked for a user outside the Paris Office administrative unit](screenshots/03-blocked-reset.png)
+
+**The Paris Office unit fills itself automatically** from a dynamic rule on usage location.
+![Paris Office administrative unit with dynamic rule user.usageLocation -eq "FR"](screenshots/01-au-dynamic-rule.png)
+
+**Helpdesk Administrator assigned with administrative-unit scope** (Paris Office), not tenant-wide.
+![Helpdesk Administrator assignment scoped to the Paris Office administrative unit](screenshots/02-scoped-role-assignment.png)
+
+**Restricted management unit:** the Executives unit protects its members, even from tenant-level admins.
+![User in a restricted management administrative unit, with the management-rights banner](screenshots/04-restricted-au.png)
+
+**Custom role:** App Credential Manager, limited to updating app registration credentials.
+![Custom role App Credential Manager with its permissions](screenshots/05-custom-role.png)
 
 ## 6. What I learned
 - An AU is a **scope**, not an OU: flat (no nesting), many AUs per user, no policies.

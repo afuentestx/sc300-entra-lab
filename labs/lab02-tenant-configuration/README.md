@@ -29,7 +29,8 @@ Configure tenant properties and branding, understand custom domain verification,
 - An unverified domain was not available for new usernames.
 
 ## 5. Screenshots
-_Add redacted screenshots (blur the domain and tenant ID)._
+**Hardened default user settings:** users can't register applications, can't create tenants, and non-admins can't access the Entra admin center.
+![Entra ID user settings](screenshots/01-user-settings.png)
 
 ## 6. What I learned
 - The initial `onmicrosoft.com` domain is permanent. Custom domains need a TXT or MX record. **Verify domains before syncing** on-prem users, or they fall back to `onmicrosoft.com` UPNs.

@@ -32,7 +32,8 @@ Get-MgRoleManagementDirectoryRoleAssignment -All | Select-Object RoleDefinitionI
 - PowerShell showed `DirectoryScopeId = /` (tenant-wide) for every assignment.
 
 ## 5. Screenshots
-_Add redacted screenshots of the role assignment and the blocked reset._
+**Signed in as the Helpdesk Administrator test user,** I tried to reset a Global Administrator's password, and it was blocked. Helpdesk admins can't reset higher-privileged admins. *(Captured after Lab 04 re-scoped this role to an administrative unit.)*
+![Reset password blocked for the Lab Admin account](screenshots/02-blocked-admin-reset.png)
 
 ## 6. What I learned
 - **RBAC = role definition + principal + scope** (tenant `/`, administrative unit, or a single app).

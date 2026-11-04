@@ -39,7 +39,14 @@ Group membership should follow HR attributes automatically (joiners and movers),
 - Both deleted groups appeared in **Deleted groups**, so **security group soft delete is now available** (historically only M365 groups were restorable).
 
 ## 5. Screenshots
-_Add redacted screenshots: rule builder, Validate Rules results, Deleted groups._
+**Compound dynamic rule:** department = Sales **and** usage location = FR.
+![DYN-Sales-Paris dynamic membership rule](screenshots/01-dynamic-rule.png)
+
+**Rule tested before relying on it:** only Pierre (Sales + France) matches. Maria and Sofia each fail one condition.
+![Validate Rules results: Pierre in group, Maria and Sofia not in group](screenshots/02-validate-rules.png)
+
+**Group lifecycle:** Microsoft 365 groups expire after 180 days unless they're renewed.
+![Group expiration policy set to 180 days](screenshots/03-expiration-policy.png)
 
 ## 6. What I learned
 - Security groups can contain devices and nested groups; M365 groups contain **users only**.

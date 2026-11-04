@@ -38,7 +38,17 @@ Get-MgUserLicenseDetail -UserId "tom.brown@contoso.onmicrosoft.com" | Select-Obj
 - A post-import check with `Get-MgUser` found a **missing department** and a user **blocked by mistake** in the CSV; both fixed with `Update-MgUser`. The first query also showed **replication lag** (re-running a few minutes later returned the full results).
 
 ## 5. Screenshots
-_Add redacted screenshots: bulk results (blur UPNs), the inherited license, Deleted users._
+**Group-based licensing:** the Entra ID P2 license is assigned to the LIC-P2-Sales group.
+![LIC-P2-Sales group with Microsoft Entra ID P2 assigned](screenshots/01-group-license.png)
+
+**The user inherits the license from the group,** so no per-user assignment is needed.
+![Maria Lopez's P2 license with assignment path Inherited (LIC-P2-Sales)](screenshots/02-inherited-license.png)
+
+**Bulk create from CSV** completed successfully.
+![Bulk operation results showing CreateUsersBulk-New.csv succeeded](screenshots/03-bulk-results.png)
+
+**Verified with Microsoft Graph PowerShell.**
+![Get-MgUserLicenseDetail output showing AAD_PREMIUM_P2](screenshots/04-graph-license-check.png)
 
 ## 6. What I learned
 - Soft delete lasts **30 days**. A **synced** user must be restored **on-prem** (AD Recycle Bin), because the source of authority wins.
