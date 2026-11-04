@@ -25,7 +25,11 @@ Device identities, hybrid identity and external identities (B2B, cross-tenant ac
 | 04 | [Scoped helpdesk delegation with administrative units](labs/lab04-administrative-units/README.md) | D1 | ✅ |
 | 05 | [User lifecycle and group-based licensing](labs/lab05-user-lifecycle-licensing/README.md) | D1 | ✅ |
 | 06 | [Dynamic groups, naming and expiration policies](labs/lab06-dynamic-groups/README.md) | D1 | ✅ |
-| 07–13 | Devices, hybrid identity (sync, PHS / PTA), external identities (B2B, cross-tenant) | D1 | ⏳ Write-ups in progress |
+| 07 | [Device identities and device settings](labs/lab07-device-identities/README.md) | D1 | ✅ |
+| 08 | [Hybrid identity design and troubleshooting (design exercise)](labs/lab08-hybrid-identity-design/README.md) | D1 | ✅ |
+| 09 | [B2B collaboration and guest access controls](labs/lab09-b2b-guest-access/README.md) | D1 | ✅ |
+| 10 | [Cross-tenant access settings and external identity providers](labs/lab10-cross-tenant-access/README.md) | D1 | ✅ |
+| 11+ | Authentication methods, MFA, SSPR, passwordless | D2 | ⏳ Week 3 |
 
 _The table grows weekly as labs are completed._
 
@@ -51,3 +55,5 @@ sc300-entra-lab/
 
 ## About me
 Service desk leader with 8 years in identity and access operations, now moving into hands-on identity and access management. I work daily with Active Directory and Microsoft Entra ID administration (user lifecycle, MFA, Temporary Access Pass, password resets, just-in-time admin access through PIM), and I'm deepening that into IAM design and governance.
+
+📫 [LinkedIn](https://www.linkedin.com/in/adan-adam-fuentes-855830207/)
